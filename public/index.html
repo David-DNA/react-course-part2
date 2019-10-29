@@ -7,6 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Expensify</title>
         <link rel="icon" type="image/png" href="/images/favicon.png" />
+        <!-- Setting the styles to be loaded first before any html, that is the reason it is loaded from the head component -->
+        <!-- We need to load the styles from here now as we have configured webpack to create separate files to reduce the bundle.js file size -->
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
     </head>
 
     <body>
