@@ -7,14 +7,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Expensify</title>
         <link rel="icon" type="image/png" href="/images/favicon.png" />
-        <!-- Setting the styles to be loaded first before any html, that is the reason it is loaded from the head component -->
-        <!-- We need to load the styles from here now as we have configured webpack to create separate files to reduce the bundle.js file size -->
-        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <!-- We want the compiled assets to be in their own directory and not be right inside public, we do not want to git
+             We want to organize these a bit better -->
+        <link rel="stylesheet" type="text/css" href="/dist/styles.css"/>
     </head>
 
     <body>
         <div id="app"></div>
-        <script src="/bundle.js"></script>
+        <!-- We want the compiled assets to be in their own directory and not be right inside public, we do not want to git
+             We want to organize these a bit better -->        
+        <script src="/dist/bundle.js"></script>
     </body>
 
 </html>
